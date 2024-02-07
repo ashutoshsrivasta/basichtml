@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function checkCharacterLimit(element, limit) {
+      if (element.value.length > limit) {
+        element.value = element.value.substring(0, limit);
+      }
+    }
+  </script>
+
+<body>
+    <textarea oninput="checkCharacterLimit(this, 100)" placeholder="Max 100 characters"></textarea>
+</body>
+</html>
