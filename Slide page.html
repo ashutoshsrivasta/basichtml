@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            position: relative;
+            height: auto;
+            width: 100%;
+
+        }
+        .img{
+            height: auto;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div><img class="img" src="my photo.webp" id="slideimage" alt=""/></div>
+        
+    </div>
+    <script>
+        function First(){
+            document.getElementById("slideimage").src="my photo.webp"
+        }
+        function Second(){
+            document.getElementById("slideimage").src="facebook logo color.png"
+        }
+        function Third(){
+            document.getElementById("slideimage").src="wedding logo.jpg"
+        }
+        function Four(){
+            document.getElementById("slideimage").src="my photo.jpg"
+        }
+        setInterval(First,2000);
+        setInterval(Second,3000);
+        setInterval(Third,4000);
+        setInterval(Four,5000);
+
+    </script>
+</body>
+</html>
